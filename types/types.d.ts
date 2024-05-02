@@ -66,6 +66,12 @@ declare module 'ml-random-forest' {
          * @return {Matrix} predictions
          */
         predictionValues(toPredict: (number[][]) | Matrix): Matrix
+
+        /**
+         * Returns the feature importance
+         * @return {Array} - feature importance
+         */
+        featureImportance(): number[];
     }
 
 
